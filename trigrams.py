@@ -1,18 +1,14 @@
-"""This module reads a file then converts into text and uses to predictive text to write a random stuff"""
-INPUT_FILE = 'input_text.txt'
-
+"""This module reads a file then converts into text and uses to predictive text to write random stuff"""
 def read_file(input_text):
-    the_file = open(input_text, 'r', encoding = "utf8")
-    data =  the_file.read()
+    """Reads the inputted text file."""
+    the_file = open(INPUT_FILE, 'r')
+    data = the_file.read()
     the_file.close()
     return data
 
 
-#create_dict(read_file('test_text.txt'))
-
-def change_string_text_to_list(string_of_words):
+def change_string_text_to_list(string_item):
     """Take a single string(text), and returns a list of its words"""
-
     string_of_words = "I wish I may I wish I might"
     list_of_words = string_of_words.split()
     for index, item in enumerate(list_of_words):
@@ -26,6 +22,4 @@ def change_string_text_to_list(string_of_words):
                 print(key_value)
 
 
-
-   
-
+change_string_text_to_list(read_file('text.txt'))
