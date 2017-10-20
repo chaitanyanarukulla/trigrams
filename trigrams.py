@@ -1,7 +1,7 @@
 """This module reads a file then converts into text and uses to predictive text to write random stuff"""
 def read_file(input_text):
     """Reads the inputted text file."""
-    the_file = open(INPUT_FILE, 'r')
+    the_file = open(input_text, 'r')
     data = the_file.read()
     the_file.close()
     return data
