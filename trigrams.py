@@ -22,6 +22,7 @@ def change_string_text_to_list(string_of_words):
             else:
                 key_value[dic_key] = [list_of_words[index + 2]]
                 print(key_value)
+                return key_value
 
 
 change_string_text_to_list(read_file('text.txt'))
