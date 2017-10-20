@@ -24,4 +24,5 @@ def change_string_text_to_list(string_of_words):
                 print(key_value)
                 return(key_value)
 
+
 change_string_text_to_list(read_file('text.txt'))

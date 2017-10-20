@@ -13,4 +13,5 @@ def test_read_file2():
 
 def test_change_string_text_to_list():
 	from trigrams import change_string_text_to_list
-	assert
+	assert len(change_string_text_to_list("string of words")) < 100
+
