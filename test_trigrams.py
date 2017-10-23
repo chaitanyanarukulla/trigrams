@@ -6,12 +6,14 @@ def test_read_file():
 	from trigrams import read_file
 	assert type(read_file("text.txt")) == str
 
-def test_read_file2():
-	"""Tests the read_file function in trigrams.py for length of text."""
-	from trigrams import read_file
-	assert len(read_file("text.txt")) > 100
 
-def test_change_string_text_to_list():
-	from trigrams import change_string_text_to_list
-	assert len(change_string_text_to_list("string of words")) < 100
+TEST_for_dictinory = [
+    ("this is long text!", {("this", "is"): ["long"], ("is", "long."): ["text!"]})
+]
+
+@pytest.mark.parametrize('input, outout', TEST_For_dictonery)
+def test_trigramize(input, output):
+    """Test to see if string changes in to key value pair"""
+    from trigrams import trigramize
+    assert trigramize(input) == output
 
