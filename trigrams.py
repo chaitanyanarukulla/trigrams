@@ -12,8 +12,10 @@ def read_file(input_text):
 
 
 def changes_text_into_dict(text):
-    """Converts text into dictionary and returs key value pairs by stripping new lines and spliting at' '
-    and  also checks if keys  exit if key already exit with same value it  appends new value."""
+    """Converts text into dictionary and returs key value
+    pairs by stripping new lines and spliting at' '
+    and  also checks if keys  exit if key already exit
+    with same value it  appends new value."""
     dictionary = {}
     text = text.replace('\n', ' ')
     while len(text.split(" ")) > 2:
@@ -42,7 +44,8 @@ def generate_random_text(dictionary, new_sentence):
 
 
 def make_new_sentence(dictionary, stop):
-    """Make a new sentences using random key value pairs  from the dictionary."""
+    """Make a new sentences using random key value pairs
+     from the dictionary."""
     new_sentence = []
     generate_random_text(dictionary, new_sentence)
     while len(new_sentence) < stop:
@@ -56,7 +59,8 @@ def make_new_sentence(dictionary, stop):
 
 
 def main(path_of_file, stop):
-    """calls all the functions that will change text.txt files and make new_sentence to create new story
+    """calls all the functions that will change
+    text.txt files and make new_sentence to create new story
     from __main__"""
     text = read_file(path_of_file)
     trigrams = changes_text_into_dict(text)
