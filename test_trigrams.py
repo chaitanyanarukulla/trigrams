@@ -27,4 +27,3 @@ def test2_changes_text_into_dict():
     """tests changes_text_into_dict() returns a dict"""
     from trigrams import changes_text_into_dict
     assert type(changes_text_into_dict(Test2)) == dict
-
