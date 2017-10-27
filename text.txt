@@ -1,4 +1,4 @@
-To Sherlock Holmes she is always THE woman. I have seldom heard
+"""To Sherlock Holmes she is always THE woman. I have seldom heard
 him mention her under any other name. In his eyes she eclipses
 and predominates the whole of her sex. It was not that he felt
 any emotion akin to love for Irene Adler. All emotions, and that
@@ -198,4 +198,4 @@ I am not mistaken, to resolve all our doubts."
 
 As he spoke there was the sharp sound of horses' hoofs and
 grating wheels against the curb, followed by a sharp pull at the
-bell. Holmes whistled.
+bell. Holmes whistled"""

@@ -33,7 +33,7 @@ def changes_text_into_dict(text):
     return dictionary
 
 
-def generate_random_text(dictionary, new_sentence):
+def generate_random_text(dictionary, new_sentence):  #no cover
     """generates random text with key from dictionary."""
     random_key = random.choice(list(dictionary.keys()))
     word_1 = str(random_key[0])
